@@ -22,6 +22,9 @@ public:
 	friend class ABlasterCharacter;
 
 	void EquipWeapon(class AWeapon* WeaponToEquip);
+	//function to register replicated variables
+	virtual void GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const override;
+	
 
 
 protected:
@@ -31,6 +34,8 @@ protected:
 private:
 
 	class ABlasterCharacter* Character;
+	//this variable needs to be replicated in order to animate the client side and it needs to be registered as well.
+	UPROPERTY(Replicated)
 	AWeapon* EquippedWeapon;
 
 public:	

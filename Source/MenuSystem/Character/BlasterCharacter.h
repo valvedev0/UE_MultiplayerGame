@@ -66,7 +66,8 @@ private:
 public:	
 	
 	void SetOverlappingWeapon(AWeapon* Weapon);
-
+	//this is a getter fn that takes the value of equipped weapon from combat component
+	bool IsWeaponEquipped();
 
 
 };

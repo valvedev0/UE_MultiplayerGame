@@ -33,4 +33,9 @@ private:
 
 	UPROPERTY(BlueprintReadOnly, Category = "Movement", meta = (AllowPrivateAccess = "true"))
 	bool bIsAccelerating;
+
+	//this will check if the weapon is equipped or not from taking the getter function from blastercharacter class
+	UPROPERTY(BlueprintReadOnly, Category = "Movement", meta = (AllowPrivateAccess = "true"))
+	bool bWeaponEquipped;
+
 };

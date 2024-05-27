@@ -168,6 +168,11 @@ void ABlasterCharacter::SetOverlappingWeapon(AWeapon* Weapon)
 		}
 	}
 }
+//this function is used in animBP for checking if the value of equipped weapon is true or not. 
+bool ABlasterCharacter::IsWeaponEquipped()
+{
+	return (Combat && Combat->EquippedWeapon);
+}
 
 
 
