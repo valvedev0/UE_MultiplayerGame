@@ -35,6 +35,7 @@ protected:
 	void Turn(float Value);
 	void LookUp(float Value);
 	void EquipKeyPressed();
+	void CrouchButtonPressed();
 
 private:
 
@@ -62,6 +63,8 @@ private:
 	//create a reliable rpc for cliemts picking up the weapon
 	UFUNCTION(Server, Reliable)
 	void ServerEquipButtonPressed();
+
+	
 
 public:	
 	
